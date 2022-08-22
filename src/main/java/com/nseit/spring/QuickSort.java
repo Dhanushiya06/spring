@@ -1,7 +1,7 @@
 package com.nseit.spring;
 
-public class QuickSort {
+public class QuickSort implements SortAlg {
     public int[] sort(int[] numbers) {
-        return 12;
+        return numbers;
     }
 }

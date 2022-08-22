@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class BinarySearchImpl {
     @Autowired
-    @Qualifier("quick")
-    private SortAlg sortAlg;
+    // Autowired by name
+    private SortAlg quickSort;
 
     // Constructor injection
 //    public BinarySearchImpl(SortAlg sortAlg) {
@@ -24,8 +24,8 @@ public class BinarySearchImpl {
         //  BubbleSortAlg bubbleSort = new BubbleSortAlg();
         // QuickSort quickSort = new QuickSort();
 
-        int[] sortedNumbers = sortAlg.sort(numbers);
-        System.out.println(sortAlg);
+        int[] sortedNumbers = quickSort.sort(numbers);
+        System.out.println(quickSort);
 
         return 12;
     }
